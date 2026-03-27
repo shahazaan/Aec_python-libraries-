@@ -1,0 +1,16 @@
+import numpy as np
+
+A = np.array([[2, 3], [1, 4]])
+B = np.array([[5, 2], [6, 3]])
+
+print("A:\n", A)
+print("B:\n", B)
+
+print("Add:\n", A + B)
+print("Sub:\n", A - B)
+print("Element-wise Mul:\n", A * B)
+print("Matrix Mul:\n", A @ B)
+
+print("Transpose:\n", A.T)
+print("Determinant:", np.linalg.det(A))
+print("Inverse:\n", np.linalg.inv(A))
