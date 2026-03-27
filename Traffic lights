@@ -1,0 +1,13 @@
+# Each row = traffic at different time or lane group
+traffic_matrix = np.array([
+    [20, 15, 30, 10],
+    [25, 10, 20, 15],
+    [10, 20, 25, 30]
+])
+
+weights = np.array([0.3, 0.2, 0.4, 0.1])
+
+scores = np.dot(traffic_matrix, weights)
+
+print("Scores:", scores)
+print("Best signal index:", np.argmax(scores))
